@@ -1,0 +1,71 @@
+\documentclass{article}
+\input{header.tex}
+\title{Fragebogen \glqq Datasheets for Datasets\nocite{gebruDatasheetsDatasets2021}\grqq}
+\author{Annalena Aicher, Lennart Eing}
+\addbibresource{bib.bib}
+\begin{document}
+\maketitle
+Die Ihnen hier gestellten Fragen dienen der Schaffung einer klaren Übersicht über einen zu erstellenden, bzw. erstellten Datensatz.
+Sie sind direkt~\cite{gebruDatasheetsDatasets2021} entnommen.
+Das Beantworten dieser Fragen dient sowohl der Schaffung eines klareren Überblicks seitens der Ersteller eines Datensatzes, als auch seitens möglicher Nutzer.
+Sie zielen auf bestimmte Teilbereiche und Prozesse innerhalb des Workflows der Datensatzerstellung.
+Diese Fragen sind weder vollständig, noch minimal.
+Das heißt, das anhängig vom Anwendungsfall möglicherweise Fragen nur teilweise, bzw. gar nicht beantwortet werden können.
+Trotzdem bitten wie Sie alle Fragen, soweit dies möglich ist, zu beantworten.
+\section{Motivation zur Erstellung des Datensatzes}
+\textbf{Im Folgenden werden Ihnen Fragen zur Motivation zur Erstellung des Datensatzes gestellt. Bitte beantworten Sie möglichst alle Fragen.}
+\begin{Form}
+    \question{Zu welchem Zweck wird der Datensatz erstellt?}{Gibt es eine spezifische Aufgabe die mithilfe dieser Daten gelöst werden soll? Gibt es eine Lücke in der Datenverfügbarkeit, die damit geschlossen werden soll? Bitte beschreiben sie:}
+    \question{Von wem wird der Datensatz erstellt? Im Auftrag von wem wird der Datensatz erstellt?}{}
+    \question{Wer hat die Erstellung des Datensatzes finanziert?}{Wenn die Finanzierung mithilfe Zuschüsse Dritter erstellt wurde nennen sie bitte diese.}
+    \question{Weitere Kommentare:}{}
+\end{Form}
+\section{Inhalt des Datensatzes}
+\textbf{Im Folgenden werden Ihnen Fragen zum Inhalt des Datensatzes gestellt. Bitte beantworten Sie möglichst alle Fragen.}
+\begin{Form}
+    \question{Wie setzen sich einzelne Proben des Datensatzes zusammen (bspw. Dokumente, Fotos, Menschen, Länder)?}{Gibt es verschiedene Probentypen (bspw. Filme und dazugehörige Bewertungen, Menschen und Interaktionen zwischen Ihnen, Kanten und Knoten?). Bitte beschreiben Sie:}
+    \question{Wie viele Proben sind insgesamt vorhanden?}{Wieviele Proben sind pro Probentyp vorhanden?}
+    \question{Enthält der Datensatz vollumfänglich alle Probeninstanzen, oder ist er Teil eines größeren Datensatzes?}{Wenn der Datensatz Teil eines weiteren größeren Datensatzes ist, welcher ist dies? Ist der Datensatz repräsentativ für den größeren Datensatz. Wenn ja, wie wurde dies überprüft? Wenn nein, auf welche Art und Weise?}
+    \question{Wie genau sieht eine eine einzelne Probe aus dem Datensatz aus?}{Beispiel: Werden Audio-Daten in Rohdaten-Formaten oder nur in vorm von vorberechneten Audio-Merkmalen abgespeichert?}
+    \question{Gibt es für jede Probe ein Trainings-Ziel, beziehungsweise zugehörige Label?}{Wenn ja, beschreiben sie bitte diese.}
+    \question{Gibt es Proben, für die Teile des Probenumfangs fehlen?}{Wenn ja, geben sie bitte eine Beschreibung warum diese Teil fehlen.}
+    \question{Sing Zusammenhänge zwischen verschiedenen Instanzen explizit?}{Wenn ja, wie werden diese Zusammenhänge dargestellt?}
+    \question{Gibt es vorgesehene Aufteilungen des Datensatzen (bspw. Trainings-, Validierungs-, und Test-Datensätze?)}{Wenn ja, begründen sie bitte wie die Aufteilungen erstellt wurden.}
+    \question{Gibt es in den Daten Fehler, Rauschen oder Redundanzen}{Wenn ja, beschreiben Sie diese bitte.}
+    \question{Ist der Datensatz vollständig, oder bestehen Beziehungen zu externen Datenquellen?}{Wenn solche Beziehungen zu externen Datenquellen bestehen, beantworten sie weiter bitte: a) Gibt es Garantien, dass diese externen Quellen unverändert weiter bestehen bleiben? b) Werden bei Veränderung des Datensatzes von außen archivierte Versionen des Datensatzes (inklusive der von extern zur Verfügung gestellten Daten) zur Verfügung gestellt? c) gibt es Einschränkungen für Dritte in der Nutzung des Datensatzes, bspw. durch Lizenzen oder Einmalzahlungen, durch diese externen Quellen? Geben sie bitte alle externen Quellen an und beschreiben sie diese.}
+    \question{Enthält der Datensatz vertrauliche Informationen, bspw. aufgrund der ärztlichen Verschwiegenheitspflicht?}{Wenn ja, beschreiben sie diese bitte.}
+    \question{Enthält der Datensatz Dinge, die beim direkten Einsehen durch Menschen verstörend, beleidigend oder anderweitig belastend sein könnten?}{Wenn ja, beschreiben sie diese bitte.}
+    \newline
+    \textbf{Wenn der Datensatz keine Informationen enthält die sich direkt auf Personen bezieht können sie die folgenden Fragen überspringen.}
+    \newline
+    \question{Unterteilt der Datensatz Menschen in Gruppen, bspw. durch Alter, Gender, o.ä.}{Wenn ja, beschreiben sie bitte wie diese Gruppen erstellt wurden. Geben sie bitte die Verteilung der verschiedenen Gruppen an.}
+    \question{Ist die Identifizierung einzelner Personen, direkt oder indirekt (also unter Zuhilfenahme anderer Informationen aus dem Datensatz), möglich?}{Wenn ja, beschreiben sie bitte wie.}
+    \question{Enthält der Datensatz Informationen, die als \glqq persönlich\grqq bezeichnet werden könnten (bspw. Informationen zu Ethnizität, Religion, politischer Meinung, Gewerkschaftszugehörigkeit; Finanz- und Gesundheitsinformationen; biometrische oder genetische Informationen)?}{Wenn ja, beschreiben sie diese.}
+    \question{Kommentare}{}
+\end{Form}
+\section{Erstellungsprozess des Datensatzes}
+\textbf{Im Folgenden werden Ihnen Fragen zum Erstellungsprozess des Datensatzes gestellt. Bitte beantworten Sie möglichst alle Fragen.}
+\begin{Form}
+    \question{Wie wurden einzelne Proben erstellt? Waren die Informationen direkt beobachtbar (bspw. Filme, Videos, etc.), wurden sie erfragt (bspw. mithilfe von Umfragen), oder indirekt erstellt (bspw. mithilfe von modellbasierter Altersschätzung)?}{Wenn Informationen indirekt erstellt wurden, wie wurde dies getan? Wie wurde sichergestellt, dass die erstellten Informationen korrekt sind?}
+    \question{Welche Methodik wurde verwendet um die Daten zu sammeln (bspw. Hardware-Spezifikationen, manuelles Erstellen von Menschen, Software, APIs)?}{Wie wurde die korrekte Funktionsweise der Methodik sichergestellt?}
+    \newline
+    \textbf{Die nächste Frage können Sie überspringen, wennn sie Frage 7 mit \glqq Nein\grqq beantwortet haben.}
+    \question{Wie haben sie Proben für den Datensatz aus dem größeren Datensatz ausgewählt?}{}
+    \question{Wer war am Sammeln der Daten beteiligt (bspw. Studenten, Vertragspartner, etc.) und wie wurden diese kompensiert?}{}
+    \question{In was für einem Zeitrahmen fand das Sammeln der Daten statt?}{Überschneidet sich der Zeitrahmen der Erstellung des Datensatzes auch mit der Erstellung einzelner Proben im Datensatz. Wenn nicht, beschreiben sie bitte auch den Zeitrahmen in welchem einzelne Proben erhoben wurden.}
+    \question{Wurde die Erstellung des Datensatzen ethisch begutachtet, bspw. durch entsprechende Institutionen?}{Wenn ja, bitte beschreiben sie den Begutachtungsprozess inklusive der Ergebnisse. Stellen sie zudem bitte alle verfügbaren Informationen (bspw. weitere Dokumentation des Begutachtungsprozesses) bereit.}
+    \newline
+    \textbf{Die nächsten Fragen können Sie überspringen, wenn ihr Datensatz personenbezogenen Daten enthält.}
+    \question{Haben Sie die personenbezogenen direkt bei den betroffenen Personen erhoben?}{Wenn nicht, beschreiben sie bitte wie die Daten erhoben wurden.}
+    \question{Wurden betroffene Personen über die Datensatzerstellung informiert?}{Wenn ja, bitte beschreiben sie wie. Fügen sie beispielsweise Bilder der Mitteilung zur Datenerhebung an.}
+    \question{Haben die betroffenen Personen einer Sammlung ihrer Daten eingestimmt?}{wenn ja, beschreiben sie bitte wie diese Einstimmung eingeholt wurde.}
+    \question{Wenn Einstimmung eingeholt wurde, wird betroffenen Personen auch eine Möglichkeit zum Rückzug von ihrer Einstimmung gegeben?}{Dies gilt auch wenn der Rückzug nur für Teile der personenbezogenen Daten gilt. Beschreiben sie bitte wie ein Rückzug vollzogen werden kann.}
+    \question{Kommentare}{}
+\end{Form}
+\section{Vorverarbeitung, Säubern und Labeling der Daten}
+\textbf{Im Folgenden werden Ihnen Fragen zur Vorverarbeitung, Säuberung und dem Labeling der Daten gestellt. Diese dienen dem Zweck Nutzern des Datensatzes bessere Entscheidungsmöglichkeiten im Bezug auf die Eignung des Datensatzes für ihr Problem zu geben.}
+\begin{Form}
+    
+\end{Form}
+\printbibliography
+\end{document}

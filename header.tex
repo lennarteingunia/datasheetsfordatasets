@@ -1,0 +1,16 @@
+\usepackage[ngerman]{babel}
+\usepackage{varwidth}
+\usepackage{csquotes}
+\usepackage[backend=biber]{biblatex}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\newcounter{questioncounter}
+\setcounter{questioncounter}{1}
+\newcommand{\question}[2]{
+    \newline\newline
+    \textbf{\thequestioncounter . #1} #2
+    \newline\newline
+    \TextField[width=\textwidth, height=3.5cm,name=\thequestioncounter]{}
+    \stepcounter{questioncounter}
+}
