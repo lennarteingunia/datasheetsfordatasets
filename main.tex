@@ -65,7 +65,48 @@ Trotzdem bitten wie Sie alle Fragen, soweit dies möglich ist, zu beantworten.
 \section{Vorverarbeitung, Säubern und Labeling der Daten}
 \textbf{Im Folgenden werden Ihnen Fragen zur Vorverarbeitung, Säuberung und dem Labeling der Daten gestellt. Diese dienen dem Zweck Nutzern des Datensatzes bessere Entscheidungsmöglichkeiten im Bezug auf die Eignung des Datensatzes für ihr Problem zu geben.}
 \begin{Form}
-    
+    \question{Wurde irgendwelche Vorverarbeitung, Säuberung oder Labeling der Daten vorgenommen, bspw. Diskretisierung, Part-of-Speech Tagging, SIFT Merkmal Extraktion, das Entfernen einzelner Instanzen oder automatisiertes Berechnen fehlender Werte?}{Wenn ja, beschreiben sie bitte ausführlich. Wenn nein, dann können sie die restlichen Fragen in diesem Abschnitt überspringen.}
+    \question{Wurden die Rohdaten zusätzlich zu den vorverarbeiteten Daten gespeichert, bspw. für zukünftig, nicht zu erwartende Zwecke?}{Wenn ja, geben sie bitte einen Weg an, über den die Rohdaten erhältlich sind.}
+    \question{Ist die Software, die verwendet wurde um die Rohdaten vorzuverarbeiten für beliebige Endnutzer erhältlich?}{Wenn ja, geben sie bitte einen Weg an diese Software zu erhalten.}
+    \question{Kommentare}{}
+\end{Form}
+\section{Nutzung}
+\textbf{Die folgenden Fragen richten sich maßgeblich an die Ersteller des Datensatzes.
+    Sie sollen dazu anleiten sich Gedanken über die Aufgaben zu machen zu welchem der Datensatz verwendet, und auch nicht verwendet werden soll.
+    Dies soll Nutzer des Datensatzes eine Unterstützung bei der Entscheidungsfindung bieten und dabei helfen potientielle Risiken zu vermeiden.}
+\begin{Form}
+    \question{Wurde der Datensatz bereits für irgendwelche Zwecke verwendet?}{}
+    \question{Gibt es einen Überblick, der alle oder einem Teil der verfügbaren Papiere und Systeme an einem Ort zusammenfasst.}{Wenn ja, geben sie bitte einen Weg an, über welchen dieser Überblick erhältlich ist.}
+    \question{Für welche (anderen) Zwecke kann der Datensatz genutzt werden?}{}
+    \question{Könnten Teile dessen, wie der Datensatz zusammengestellt, gesammelt und vorverarbeitet wurde zu einer Verzerrung der Realität bei einer Nutzung führen?}{Beispielsweise können sie hier angeben, wenn es durch die Nutzung des Datensatzes zur unfairen Behandlung von Individuen oder Gruppen, oder rechtlichen oder finanziellen Risiken kommen kann. Wenn ja, beschreiben sie bitte. Gibt es Vorkehrungen, die ein Nutzer des Datensatzes treffen kann um diese Risiken zu vermeiden?}
+    \question{Gibt es Zwecke, für welche der Datensatz nicht benutzt werden sollte?}{Wenn ja, beschreiben Sie bitte.}
+    \question{Kommentare}{}
+\end{Form}
+\section{Verbreitung}
+\textbf{Die folgenden Fragen richten sich maßgeblich an die Ersteller des Datensatzes.
+    Sie sollten beantwortet werden, bevor der Datensatz innerhalb der erstellenden Entität oder an Dritte weiterverbreitet wird.}
+\begin{Form}
+    \question{Wird der Datensatz auch an Dritte außerhalb der erstellenden Entität weiterverbreitet werden?}{Wenn ja, beschreiben Sie bitte.}
+    \question{Wie wird der Datensatz verbreitet werden, bspw. tarball, API oder GitHub?}{Hat der Datensatz außerdem einen Digital Object Identifier (DOI)?}
+    \question{Ab wann wird der Datensatz weiterverbreitet werden?}{}
+    \question{Wird der Datensatz unter einen Copyright verbreitet? Werden die Rechte am geistigen Eigentum einbehalten? Wird der Datensatz unter einer Nutzungsvereinbahrung verbreitet?}{Wenn ja, beschreiben Sie bitte die Lizenzen und/oder Nutzungsvereinbahrungen und geben sie einen Weg an diese einzusehen und/oder zu erhalten? Geben Sie außerdem auch alle Gebühren an, die potentiell aufgewendet werden müssen.}
+    \question{Schränken Dritte aufgrund geistigen Eigentums die Verbreitung des Datensatzes ein?}{Wenn ja, beschreiben Sie bitte die Einschränkungen. Geben Sie einen Weg an diese einzusehen. Geben sie außerdem alle Gebühren an, die aufgrund dieser Einschränkungen aufgewendet werden müssen.}
+    \question{Gibt es Exportbeschränkungen oder andere regulatorische Einschränkungen die den ganzen Datensatz oder Einzelinstanzen des Datensatzes betreffen?}{Wenn ja, schreiben Sie diese bitte und geben sie einen Weg an diese einzusehen.}
+    \question{Kommentare}{}
+\end{Form}
+\section{Wartung}
+\textbf{Die folgenden Fragen richten sich maßgeblich an die Ersteller des Datensatzes.
+    Sie sollten beantwortet werden, bevor der Datensatz innerhalb der erstellenden Enität oder an Dritte weiterverbreitet wird.
+    Sie zielen maßgelbich darauf ab, die Ersteller des Datensatzes anzuregen einen Wartungsplan aufzustellen und diesen den Nutzern des Datensatzes zu kommunizieren.}
+\begin{Form}
+    \question{Wer wird die den Datensatz warten, zu Verfügung stellen, und Support übernehmen?}{}
+    \question{Wie kann Kontakt zu den Kuratoren des Datensatzes hergestellt werden?}{}
+    \question{Gibt es ein Erratum?}{Wenn ja, geben Sie bitte einen Weg an, über den es erhältlich ist.}
+    \question{Wird der Datensatz Updates erhalten, bspw. um Labelingfehler zu korrigieren?}{Wenn ja, beschreiben Sie bitte, wie oft diese Korrekturen stattfinden werden, durch wen diese Korrekturen durchgeführt werden und wie die Verfügbarkeit von Korrekturen an die Datensatznutzer kommuniziert werden wird.}
+    \question{Diese Frage kann übersprungen werden, wenn der Datensatz keine personenbezogenen Daten enthält: Gibt es zeitliche Begrenzungen wie lang personenbezogene Daten gehalten werden dürfen, bspw. weil den Personen mitgeteilt wurde, dass ihre Daten nur für einen bestimmten Zeitrahmen gehalten werden würden?}{Wenn ja, beschreiben Sie diese. Beschreiben Sie weiter wie die Wahrung dieser zeitlichen Begrenzungen gewährleistet werden soll.}
+    \question{Werden alte Versionen des Datensatz weiterhin verfügbar sein und gewartet werden?}{Wenn ja, beschreiben Sie bitte wie. Wenn nicht, dann beschreiben Sie bitte, wie Obsolenszenz den Datensatznutzern mitgeteilt wird.}
+    \question{Ist es Dritten möglich zum Datensatz beitragen/beizufügen?}{Wenn ja, beschreiben Sie bitte wie. Wenn nicht, warum nicht? Wie werden Datensatznutzer über solche Beifügungen informiert?}
+    \question{Kommentare}{}
 \end{Form}
 \printbibliography
 \end{document}
