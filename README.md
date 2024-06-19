@@ -1,5 +1,7 @@
 Deutsche Version der Fragen aus 'Datasheets for Datasets'.
 
+Das entsprechende GitHub-Repository ist zu finden unter: https://github.com/lennarteingunia/datasheetsfordatasets
+
 Zum zitieren verwenden Sie bitte:
 ```
 @article{gebruDatasheetsDatasets2021,
